@@ -1,4 +1,10 @@
-# 概述
+# Unity Compute Shader Thread Groups 线程组
+- Compute Shader
+- 线程组
+- 派发参数
+- 纹理大小
+
+## 概述
 - 文本旨在
   - 介绍 Dispatch(x,y,z)
   - 介绍 numthreads(x,y,z)
@@ -12,7 +18,7 @@
 
 ## numthreads
 - numthreads(x,y,z)：一个线程组有多少线程
-- 意义
+- 这样做的意义
   - 同一个组内的shader invocation能够共享变量和特殊函数
 
 ## 联系
@@ -28,9 +34,13 @@ void FillWithRed (uint3 dtid : SV_DispatchThreadID)
 ```
 dtid.x是水平方向的像素
 dtid.y是竖直方向的像素
-- 如果 texture 像素数量 < 线程数量 会发生什么
 
 ## 例子
-- 400x300的纹理选择的参数
-  - dispatch
-  - numthreads
+- 1024x512的纹理选择的参数
+  - 假设选择numthreads(16,16,1)， 一组256个线程
+  - 那么一共就需要 1024 * 512 / (16 * 16) = 2048 个线程组
+  - 可以选择以下参数
+    - dispatch(128,16,1)
+    - dispatch(64,32,1)
+    - dispatch(32,64,1)
+    - dispatch(32,32,2)
