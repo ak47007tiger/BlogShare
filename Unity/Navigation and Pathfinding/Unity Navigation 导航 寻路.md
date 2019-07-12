@@ -60,25 +60,43 @@
 - 选中需要导航的网格，在static中勾选Navigation，设置属性，Bake
 
 ## NavMesh building components
-- 更高层级的NavMesh构建组件，可以在asset store下载，或者github上下载
+- 更高层级的NavMesh构建组件，非内置，在github上可下载
 - https://store.unity.com/?_ga=2.69928656.1307606252.1561945940-1506278448.1552462098
 - https://github.com/Unity-Technologies/NavMeshComponents
   - NavMesh Surface
+    - 拓展了原先的NavMesh
+      - 支持限制不同agent在不同区域类型
+      - 可以指定非static烘焙导航数据
+      - 可以指定那些物体被烘焙到导航数据
   - NavMesh Modifier
+    - 可以在烘焙的时候对要烘焙的对象做额外处理和设置
+    - 如果有一堆东西中只有个别物体的设置不同，使用这个会方便
   - NavMeshModifierVolume
+    - 可以修改一个范围区域的烘焙数据
+      - 修改Area Type
+      - 修改影响的Agent类型
   - NavMeshLink
+    - 用来连接2个NavMesh Surface
+    - 注意事项
+      - 必须是2个不同的NavMesh Surface
+      - NavMesh Surface和NavMeshLink必须是相同的Agent类型
+      - NavMeshLink的起点或者终点必须只连接在单一的一个NavMeshSurface上
+      - 如果有场景分开加载，确保第一个场景中的NavMeshLink不会连接到后续场景中错误的地方
   - NavMesh building components API
 
 ## Advanced NavMesh Bake Settings
 - Min Region Area
+  - 最小区域，如果小于这个区域不会被烘焙进导航数据
 - Voxel Size
+  - 格子大小，越小性能消耗约大，同时也越精确
 - Smaller Agent Radius
 - More Accurate NavMesh
 
 ## 创建各类组件
-- Creating a NavMesh Agent
-- Creating a NavMesh Obstacle
-- Creating an Off-mesh Link
+- 比较简单的，一试便知
+  - Creating a NavMesh Agent
+  - Creating a NavMesh Obstacle
+  - Creating an Off-mesh Link
 - Building Off-Mesh Links Automatically
   - *Drop Height*应该设置大一点，确保烘焙的时候不会导致连接断开
   - *Jump Distance*应该大一点，2*agentRadius大小确保可以跳过间隙
