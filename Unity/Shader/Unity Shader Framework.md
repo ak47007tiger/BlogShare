@@ -1,0 +1,43 @@
+## unity shader
+- coordinate
+- vertex
+- fragment
+- texture
+  - sampler
+  - wrap mode
+    - clamp
+    - repeat
+  - filter
+    - point
+    - line
+    - 2
+    - 3
+  - texture type
+    - single channel
+    - multiple channel
+    - help/mask texture
+      - lightmap
+      - normalmap
+      - spacularmap
+    - cubemap
+- lighting
+  - light
+    - direct
+    - point
+    - area spot
+  - ambient light
+  - light model
+    - diffuse
+    - specular
+  - shadow
+- reflection
+- refraction
+- depth
+- alpha
+- effect
+  - fog
+  - rim
+  - xray
+  - 
+
+## GI

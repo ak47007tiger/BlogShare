@@ -1,0 +1,10 @@
+- [x] multi_compile
+- [x] shader_feature
+- [ ] roslyn
+- [x] normal map
+- [x] c# xml parse
+- [x] 其次坐标，以及和非其次坐标互转
+- [x] X-Ray
+- [ ] filtering
+- [ ] blend stratagy
+- [ ] custom script template

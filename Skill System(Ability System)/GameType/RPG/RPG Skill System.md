@@ -1,0 +1,9 @@
+## structure
+- Data
+  - PlayerData
+  - PlayerAttribute
+  - Attribute
+  - SkillData
+  - Skill
+- Handler
+- Display
