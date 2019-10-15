@@ -7,4 +7,5 @@
 - [x] X-Ray
 - [ ] filtering
 - [ ] blend stratagy
-- [ ] custom script template
+- [x] custom script template
+- [ ] unity sampler states
