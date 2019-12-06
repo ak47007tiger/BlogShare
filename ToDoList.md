@@ -5,7 +5,7 @@
 - [ ] gpu ray tracing
 - [ ] rendering
   - [ ] rendering with xxxmap
-    - [ ] normal map
+    - [x] normal map
     - [ ] light map
     - [ ] bump map
   - [ ] rendering scene
@@ -14,8 +14,7 @@
   - [ ] rendering hair
 - [ ] effective c#
 - [ ] gpu programing 1-11
-- [ ] unity STEREO
-- [ ] _ProjectionParams
+- [x] _ProjectionParams
 - [ ] texture sampler
 - [ ] shadow
   - [ ] high performance shadow
