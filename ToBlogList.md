@@ -9,3 +9,6 @@
 - [ ] blend stratagy
 - [x] custom script template
 - [ ] unity sampler states
+- [ ] .net垃圾回收
+- [ ] ui/ScrollRect
+- [ ] proto buff 使用
