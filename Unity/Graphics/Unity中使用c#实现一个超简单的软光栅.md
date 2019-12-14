@@ -1,5 +1,3 @@
-# 借助Unity实现一个超简单的软光栅
-
 ## 概述
 - 借助Unity的Camera,Matrix4x4,Vector4,Mesh,Texture2D，完成顶点从模型空间到屏幕空间的坐标变换，在屏幕上绘制线框三角形
 

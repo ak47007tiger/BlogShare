@@ -11,4 +11,11 @@
 - [ ] unity sampler states
 - [ ] .net垃圾回收
 - [ ] ui/ScrollRect
-- [ ] proto buff 使用
+- [x] unity proto buff 使用
+- [ ] GPU Instancing纹理
+- [ ] 渲染管线
+- [ ] 光照公式总结
+- [ ] B树
+- [ ] B+树
+- [ ] 红黑树
+- [ ] 打包出unity工程使用的dll
