@@ -1,0 +1,11 @@
+## excel to protobuf data
+- excel to csv
+- parse proto
+- to bytes file
+  - 数组
+    - 从csv查找数组长度，逐个读取根据类型写入
+  - 引用类型
+    - 指定开始列结束列递归执行写入二进制的过程
+  - 枚举
+    - 写入枚举类型的值
+  - 

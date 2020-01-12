@@ -23,3 +23,7 @@
 - [ ] GPU Skining
 - [ ] Animation Instancing
 - [ ] lua gc
+- [ ] c# ? and ??操作符
+- [ ] 静态物体可见管理(内存优化)：四叉树
+- [ ] AOI(Area Of Interest)解决方案：十字链表法
+- [ ] proto buf复杂协议
